@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Don Raffae’ • Bed & Breakfast</title>
+<meta name="description" content="Don Raffae’ B&B – Sito in costruzione. Per info e prenotazioni scrivi a info@donraffaenola.com">
+<style>
+  :root{
+    --bg:#b48787;       /* rosa esatto del logo */
+    --fg:#0b2b33;       /* blu/verde scuro del logo */
+    --fg-soft:#173e48;
+  }
+  /* reset leggero */
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background:var(--bg);
+    color:var(--fg);
+    line-height:1.4;
+  }
+
+  .page{
+    min-height:100svh;               /* copre tutta l'altezza anche su mobile */
+    padding:clamp(16px, 3vw, 32px);
+    display:grid;
+    place-items:center;
+  }
+
+  .card{
+    text-align:center;
+    width:min(92vw, 720px);
+    margin:auto;
+  }
+
+  .logo{
+    width:clamp(110px, 22vw, 200px);
+    height:auto;
+    display:block;
+    margin:0 auto clamp(16px, 3vw, 24px);
+  }
+
+  h1{
+    margin:0 0 8px 0;
+    font-weight:800;
+    letter-spacing:0.06em;
+    text-transform:uppercase;
+    font-size:clamp(22px, 4.2vw, 36px);
+  }
+
+  .sub{
+    margin:0 0 clamp(18px, 3vw, 28px);
+    font-size:clamp(14px, 2.6vw, 18px);
+    color:var(--fg-soft);
+  }
+
+  .cta-label{
+    font-size:clamp(13px, 2.4vw, 16px);
+    letter-spacing:.03em;
+    text-transform:uppercase;
+    margin-bottom:8px;
+  }
+
+  .cta a{
+    display:inline-block;
+    padding:.6em 1em;
+    border:2px solid var(--fg);
+    border-radius:999px;
+    color:var(--fg);
+    text-decoration:none;
+    font-weight:700;
+    font-size:clamp(14px, 3vw, 18px);
+    transition:.2s ease;
+    background:transparent;
+  }
+  .cta a:hover{ transform:translateY(-1px); background:rgba(11,43,51,.06); }
+
+  footer{
+    position:fixed;
+    inset:auto 0 14px 0;
+    text-align:center;
+    font-size:12px;
+    color:var(--fg-soft);
+    pointer-events:none;
+  }
+</style>
+</head>
+<body>
+  <main class="page">
+    <div class="card">
+      <img src="logo.png" class="logo" alt="Don Raffae’ Bed & Breakfast">
+      <h1>Coming Soon</h1>
+      <p class="sub">Il sito Don Raffae’ è in costruzione. Restate connessi.</p>
+
+      <div class="cta-label">🗝️ PER INFO E PRENOTAZIONI SCRIVI</div>
+      <p class="cta">
+        <a href="mailto:info@donraffaenola.com">info@donraffaenola.com</a>
+      </p>
+    </div>
+  </main>
+
+  <footer>📍 Nola</footer>
+</body>
+</html>
